@@ -6,4 +6,7 @@ class Pelicula
     @actores = actores
     @id
   end
+  def to_s
+    "#{@titulo}, #{@director}, #{@actores}"
+  end
 end
