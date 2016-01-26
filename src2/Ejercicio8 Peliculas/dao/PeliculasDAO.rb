@@ -6,10 +6,11 @@ class PeliculasDAO
   def addPelicula pelicula  
     if @@contador <10 
       pelicula.id =@@id
+      @@id +=1
       @@coleccion<<pelicula
       @@contador +=1
-        resultado = true
-        return resultado
+      resultado = true
+      return resultado
     else
     resultado = false
     return resultado
@@ -25,6 +26,7 @@ class PeliculasDAO
       if pelicula.id == peliculaId
         @@coleccion.delete pelicula
         resultado = true
+        @@contador -=1
         return resultado
       end
     end
