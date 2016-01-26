@@ -14,9 +14,15 @@ cuadrado = Square.new 0.5,0.2
 puts cuadrado.wArea
 puts cuadrado.wPerimeter
 
+trapecio = Trapezoid.new 1,0.5,0.5,0.3
+puts cuadrado.wArea
+puts cuadrado.wPerimeter
+
+
 conduit = Conduit.new 0.2,0.009
 
 manning = Manning.new conduit,cuadrado
 puts manning.hr
 puts manning.q
 puts manning.vel
+
